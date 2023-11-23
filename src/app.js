@@ -10,6 +10,7 @@ const newsRoute = require("./routers/news.route");
 const adminRoute = require("./routers/admin.route");
 const layoutRoute = require("./routers/layout.route");
 const resultRoute = require("./routers/studentsResult.route");
+const applicantRoute = require("./routers/applicant.route");
 
 /* 
     making app
@@ -62,6 +63,11 @@ app.use("/api/v1/layout", layoutRoute);
   result route
 */
 app.use("/api/v1/students-result", resultRoute);
+
+/* 
+  applicants route
+*/
+app.use("/api/v1/applicants", applicantRoute);
 
 /*
     Client error handler
